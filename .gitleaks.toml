@@ -1,0 +1,8 @@
+
+title = "DevSecOps Security Lab"
+
+[[rules]]
+id = "lab-fake-secret"
+description = "Detect deliberately planted lab credentials"
+regex = '''LAB_SECRET_[A-Z0-9]{12}'''
+keywords = ["LAB_SECRET_"]
