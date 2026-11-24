@@ -52,4 +52,4 @@ jobs:
           docker run --rm \
             -v "${{ github.workspace }}:/repo" \
             aquasec/trivy:latest \
-            fs --scanners vuln --exit-code 0 /repo
+            fs --scanners vuln --severity HIGH,CRITICAL --exit-code 1 /repo
